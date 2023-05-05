@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class StartButtonScript : MonoBehaviour
 {
     public int gameStartScreen;
+    
     public void StartGame_function()
     {
         SceneManager.LoadScene(gameStartScreen);
