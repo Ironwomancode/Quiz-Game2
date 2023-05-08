@@ -12,6 +12,18 @@ EditorBuildSettings:
     path: Assets/Scenes/ProgressBar.unity
     guid: 6388bddbc6a9921418157427e4192a01
   - enabled: 1
-    path: Assets/Scenes/Level_1.unity
+    path: Assets/Scenes/Player name.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Quiz Level 1.unity
+    guid: 411b6fa283339c542ad2cc93e0c38b23
+  - enabled: 1
+    path: Assets/Scenes/Level Up.unity
+    guid: e9da56427dca03847b55fffe467b1203
+  - enabled: 1
+    path: Assets/Scenes/Quiz Level 2.unity
+    guid: c05f78299fc3ddc4bae13bad59b6c228
+  - enabled: 1
+    path: Assets/Scenes/Quiz Level 3.unity
+    guid: 4128ff91e3e3740478875f5f8f7d9ddd
   m_configObjects: {}

@@ -17,10 +17,10 @@ public class GameManager_L1 : MonoBehaviour
 
     private int totalCorrect = 0;
 
-    public Transform scoreObj;
+    //public Transform scoreObj;
 
     //setting up the UI text on the quizz
-    [SerializeField]
+    //[SerializeField]
     //private Text factText;
 
     //time between question - one second
@@ -30,7 +30,7 @@ public class GameManager_L1 : MonoBehaviour
     [SerializeField]
     //private Text trueAnswerText;
     //[SerializeField]
-    //private Text falseAnswerText;
+   // private Text falseAnswerText;
 
     //[SerializeField]
     private Animator animator;
@@ -45,28 +45,31 @@ public class GameManager_L1 : MonoBehaviour
         {
             unansweredQuestions = questions.ToList<Question>();
         }
+        
         SetCurrentQuestion();
-        //Debug.Log(currentQuestion.fact + " is " + currentQuestion.isTrue);
+        Debug.Log(currentQuestion.fact + " is " + currentQuestion.isTrue);
     }
+
+   
     void SetCurrentQuestion()
     {
 
         int randomQuestionIndex = Random.Range(0, unansweredQuestions.Count);
         currentQuestion = unansweredQuestions[randomQuestionIndex];
-        //access the current question
+       //access the current question
         //factText.text = currentQuestion.fact;
 
-        if (currentQuestion.isTrue)
-        {
+        //if (currentQuestion.isTrue)
+        //{
             //scoreObj.GetComponent<Text>().text = "Score:" + totalCorrect;
-            //trueAnswerText.text = "Correct";
-           // falseAnswerText.text = "Wrong";
-        }
-        else
-        {
-           // trueAnswerText.text = "Wrong";
-           // falseAnswerText.text = "Correct";
-        }
+         ///   trueAnswerText.text = "Correct";
+         //   falseAnswerText.text = "Wrong";
+        //}
+        //else
+        //{
+        //    trueAnswerText.text = "Wrong";
+        //    falseAnswerText.text = "Correct";
+        //}
 
     }
 
@@ -82,11 +85,11 @@ public class GameManager_L1 : MonoBehaviour
     public void UserSelectTrue()
     {
         //scoreObj.GetComponent<Text>().text = "Score:" + totalCorrect;
-        animator.SetTrigger("True");
+        //animator.SetTrigger("True");
         if (currentQuestion.isTrue)
         {
             Debug.Log("Correct");
-            totalCorrect += 10;
+            //totalCorrect += 10;
 
         }
         else
@@ -98,7 +101,7 @@ public class GameManager_L1 : MonoBehaviour
     public void UserSelectFalse()
     {
         //scoreObj.GetComponent<Text>().text = "Score: " + totalCorrect;
-        animator.SetTrigger("False");
+        //animator.SetTrigger("False");
         if (!currentQuestion.isTrue)
         {
             Debug.Log("Correct");
